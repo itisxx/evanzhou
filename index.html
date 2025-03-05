@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+    <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/images/icon/favicon.ico" />
+    <link rel="apple-touch-icon" href="/images/logo/apple-touch-icon.png" />
+    <link rel="bookmark" href="/images/logo/apple-touch-icon.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="200x200" href="/images/logo/apple-touch-icon.png" />
+    <meta name="description" content="一个默默无闻的主页" />
+    <meta name="keywords" content="breeze,个人主页" />
+    <meta name="author" content="breeze" />
+    <meta name="theme-color" content="#424242" />
+    <title>breeze的主页</title>
+    <!-- HarmonyOS Sans -->
+    <!-- 本站 CDN 已开启防盗链，非本站域名不可访问，请更改链接为下方内容，否则自定义字体将失效 -->
+    <link rel="stylesheet" href="https://s1.hdslb.com/bfs/static/jinkela/long/font/regular.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.imsyy.top/gh/imsyy/file/font/HarmonyOS_Sans/regular.min.css" /> -->
+    <!-- IE Out -->
+    <style type="text/css">
+      #player-container {
+        margin-top: 240px;
+        margin-left: 380px;
+      }
+    </style>
+    <script>
+      if (/*@cc_on!@*/ false || (!!window.MSInputMethodContext && !!document.documentMode))
+        window.location.href =
+          'https://support.dmeng.net/upgrade-your-browser.html?referrer=' +
+          encodeURIComponent(window.location.href);
+    </script>
+    <script src="/jwplayer-v6/jwplayer.js"></script>
+	<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+	<script>LA.init({id:"KbE3qdS5UX5VZCcR",ck:"KbE3qdS5UX5VZCcR",autoTrack:true,hashMode:true})</script>
+    <script type="module" crossorigin src="/assets/index-3f2ecc49.js"></script>
+    <link rel="stylesheet" href="/assets/index-4003a593.css">
+  <link rel="manifest" href="/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/registerSW.js"></script></head>
+
+  <body>
+    <!-- 主体内容 -->
+    <div id="app"></div>
+    <div id='player-container'></div>
+    <!-- noscript -->
+    <noscript>
+      <div style="text-align: center">请开启 JavaScript</div>
+    </noscript>
+    
+    <script type="application/javascript">
+      jwplayer("player-container").setup({
+        //file: "lists/3.mp3",  //媒体文件路径
+        //image: "pic2.jpg",  //封面图片路径
+        skin: "/jwplayer-v6/skins/vapor.xml",  //设置JWplayer皮肤，免费版的只能使用xml路径，可选2种皮肤beelden| bekle| |five |glow|roundster| six |stormtrooper|vapor
+        flashplayer: "/jwplayer-v6/jwplayer.flash.swf",  //flash播放模式下，设置SWF文件路径
+        html5player: "/jwplayer-v6/jwplayer.html5.js",  //HTML5播放模式下，设置JS文件路径
+        primary: "html5",  //设置播放模式，可选项html5(默认) | flash
+        autostart: false,  //是否自动播放，可选项true | false；此设置在移动设备上无效
+        repeat: false,  //是否循环播放，可选项true | false(默认)
+        width: 470,  //设置JWplayer宽度
+        height: 40,  //设置JWplayer高度；设置为40或更低数字，则JWplayer即为音频模式
+        aspectratio: "16:9",  //设置播放比例，如果设置，height(高度)设置将无效
+        stretching: "fill",  //设置显示模式，可选项uniform(等比拉伸) | exactfit(不等比满屏) | fill(等比满屏) | none(原始大小)
+        "playlist":[{
+          "file": "/jwplayer-v6/lists/1.mp3"
+        },{
+          "file": "/jwplayer-v6/lists/2.mp3"
+        }],
+        mute: false,
+        volume: 100,
+        dock: true,
+        controls: true,
+        preload: "auto",
+        aboutlink: "https://www.hertzdance.com/",
+        abouttext: "关于"
+      });
+    </script>
+  </body>
+</html>
